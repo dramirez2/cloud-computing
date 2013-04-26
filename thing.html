@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- You need to add ng-app to the html tag to get angluar to handle the page. -->
+<html ng-app="myApp">
+  <header>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+      //You need to add myApp to a module and provide access to any needed services.
+      angular.module('myApp', []);
+
+    </script>
+  </header>
+  
+  <body>
+    Notice as you type in the text box how the name will appear and change.<br>
+    Hello <input type="text" ng-model="name"><br>
+    Unversity <input type="text" ng-model="upr"> <br>
+    Character length: {{name.length}} <br>
+    UPR: {{upr.concat(name)}}
+    <br>Characters left:  {{140 - name.length}}
+    <div ng-show="140 - name.length <=  0">Too many characters</div>
+    <script> 
+  if ( {{name.length}} === 5){ <div ng-show=" ">wow<\div>}
+  </script>
+  </body>
+  
+
+</html>
